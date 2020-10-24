@@ -1,0 +1,35 @@
+.navText {
+    font-size: 0.9rem;
+}
+
+.btn.btn-primary {
+    border-radius: 0.5rem;
+    border-color: #00b4e3;
+    background-color: #00b4e3;
+}
+
+.btn.btn-primary:hover {
+    border-color:#53D0F1;
+    background-color: #53D0F1;
+} 
+
+.btnText {
+    font-size: 0.8rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+#loadBtn {
+    margin-right: 10px;
+}
+
+#imgrov{
+    margin-top: 100px;
+    
+}
+
