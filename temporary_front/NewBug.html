@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/NewBugc.css">
+</head>
+
+<body>
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#screenshot">
+        Добавить баг
+    </button>
+
+    <!-- Modal Скриншот-->
+    <div class="modal fade" id="screenshot" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="screenshotLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="screenshotLabel">Скриншот бага</h5>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal"
+                        data-target="#Category" aria-label="Close">Далее</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal Категория-->
+    <div class="modal fade" id="Category" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="CategoryLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="CategoryLabel">Категория бага</h5>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="options" id="option1" checked> Функциональный
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option2"> Косметический
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-target="#screenshot" data-dismiss="modal" data-toggle="modal"
+                        aria-label="Close">Назад</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal"
+                        data-target="#tag" aria-label="Close" id="next">Далее</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Тэги-->
+    <div class="modal fade" id="tag" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="tagLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tagLabel">Тэги</h5>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                          <input type="checkbox" checked> Checked
+                        </label>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-target="#Category" data-dismiss="modal" data-toggle="modal"
+                    aria-label="Close">Назад</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal"
+                        data-target="#text" aria-label="Close">Далее</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Комментарий-->
+    <div class="modal fade" id="text" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="textLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="textLabel">Комментарий</h5>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <textarea class="form-control" rows="3"></textarea>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-target="#tag" data-dismiss="modal" data-toggle="modal"
+                        aria-label="Close">Назад</button> 
+                    <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal"
+                        aria-label="Close">Завершить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      
+
+
+
+
+
+
+
+    <!--
+               <input class="form-control" type="text" placeholder="Default input">
+
+
+            -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="js/LkAdmin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
