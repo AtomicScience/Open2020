@@ -24,10 +24,20 @@
     height: 60px;
 } */
 
-.form-group {
-    margin-top: 50px;
-}
 
 #loadBtn {
     margin-right: 10px;
+}
+
+.filter {
+    padding-bottom: 10px;
+}
+
+.top {
+    margin-top: 30px;
+}
+
+.filter-block {
+    background-color: #F5F5F5;
+    border-radius: 10px;
 }
